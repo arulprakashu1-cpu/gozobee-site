@@ -1,0 +1,128 @@
+@import '../../../styles/_variables.scss';
+@import '../../../styles/_mixins.scss';
+
+$yellow: #FFC107;
+$dark: #121212;
+$surface: #1E1E1E;
+$gray: #b0b3b8;
+$max-w: 1100px;
+
+.tag {
+  display: inline-block; font-size: 0.8rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 2px; color: $yellow; margin-bottom: 0.75rem;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.85rem 2rem; border-radius: 8px; font-weight: 600; font-size: 1rem;
+  text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: all 0.2s;
+  &--primary { background: $yellow; color: $dark; &:hover { background: darken($yellow, 6%); transform: translateY(-2px); } }
+  &--lg { padding: 1rem 2.5rem; font-size: 1.05rem; }
+}
+
+.page-hero {
+  background: linear-gradient(165deg, $dark, #1a1a2e, $surface);
+  color: #fff; padding: 5rem 2rem 3.5rem; text-align: center;
+  &__inner { max-width: 700px; margin: 0 auto; }
+  h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 1rem; }
+  p { color: $gray; font-size: 1.15rem; line-height: 1.7; }
+}
+
+// Mission Vision
+.mv-section {
+  background: $surface; color: #fff; padding: 4rem 2rem;
+  &__inner {
+    max-width: $max-w; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;
+  }
+}
+.mv-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px; padding: 2rem; text-align: center; transition: transform 0.2s;
+  &:hover { transform: translateY(-3px); }
+  .material-symbols-outlined { font-size: 2.5rem; color: $yellow; margin-bottom: 0.75rem; }
+  h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+  p { color: $gray; line-height: 1.7; font-size: 0.95rem; }
+}
+
+// Numbers
+.numbers-section {
+  background: $dark; color: #fff; padding: 4rem 2rem; text-align: center;
+  &__inner { max-width: $max-w; margin: 0 auto; }
+  h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 2rem; }
+}
+.numbers-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.25rem;
+}
+.num-card {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px; padding: 1.75rem 1rem; transition: transform 0.2s;
+  &:hover { transform: translateY(-3px); }
+  strong { display: block; font-size: 2rem; font-weight: 800; color: $yellow; margin-bottom: 0.25rem; }
+  span { font-size: 0.82rem; color: $gray; text-transform: uppercase; letter-spacing: 1px; }
+}
+
+// Team
+.team-section {
+  background: $surface; color: #fff; padding: 4rem 2rem; text-align: center;
+  &__inner { max-width: $max-w; margin: 0 auto; }
+  h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 2rem; }
+}
+.team-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; text-align: center;
+}
+.team-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px; padding: 2rem; transition: transform 0.2s;
+  &:hover { transform: translateY(-3px); }
+  &__avatar {
+    width: 64px; height: 64px; border-radius: 50%; background: rgba(255,193,7,0.12);
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;
+    .material-symbols-outlined { font-size: 2rem; color: $yellow; }
+  }
+  h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
+  &__role { font-size: 0.85rem; color: $yellow; font-weight: 600; display: block; margin-bottom: 0.75rem; }
+  p { color: $gray; font-size: 0.9rem; line-height: 1.6; }
+}
+
+// Careers
+.careers-section {
+  background: $dark; color: #fff; padding: 4rem 2rem; text-align: center;
+  &__inner { max-width: $max-w; margin: 0 auto; }
+  h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+  > p, &__inner > p { color: $gray; font-size: 1.05rem; max-width: 640px; margin: 0 auto 2rem; line-height: 1.7; }
+}
+.careers-perks {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+  text-align: left; margin-bottom: 2.5rem;
+}
+.perk {
+  padding: 1.5rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.03); transition: transform 0.2s;
+  &:hover { transform: translateY(-3px); }
+  .material-symbols-outlined { font-size: 1.8rem; color: $yellow; margin-bottom: 0.5rem; display: block; }
+  h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem; }
+  p { color: $gray; font-size: 0.93rem; line-height: 1.6; }
+}
+
+// Global
+.global-section {
+  background: $surface; color: #fff; padding: 4rem 2rem; text-align: center;
+  &__inner { max-width: $max-w; margin: 0 auto; }
+  h2 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.75rem; }
+  &__subtitle { color: $gray; font-size: 1.05rem; max-width: 600px; margin: 0 auto 2rem; }
+}
+.global-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;
+}
+.global-card {
+  padding: 1.75rem; border-radius: 14px; border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.03); transition: transform 0.2s;
+  &:hover { transform: translateY(-3px); }
+  .material-symbols-outlined { font-size: 2rem; color: $yellow; margin-bottom: 0.5rem; }
+  h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.3rem; }
+  p { color: $gray; font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+  .page-hero h1 { font-size: 2rem; }
+}

@@ -1,0 +1,199 @@
+<nav class="mega-menu" [class.open]="isMobileMenuOpen">
+  <ul class="mega-menu__list">
+    <!-- Services -->
+    <li class="mega-menu__item" (mouseenter)="openDropdown('services')" (mouseleave)="closeDropdown()">
+      <a routerLink="/services"><span class="material-symbols-outlined">security</span> Services</a>
+      <div class="mega-menu__dropdown" [class.show]="activeDropdown === 'services'">
+        <a class="mega-menu__col" routerLink="/services" fragment="managed-security">
+          <span class="material-symbols-outlined mega-menu__icon">shield</span>
+          <h5>Managed Security</h5>
+          <p>Comprehensive 24/7 monitoring, proactive threat detection, and rapid incident response.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/services" fragment="threat-intelligence">
+          <span class="material-symbols-outlined mega-menu__icon">psychology</span>
+          <h5>Threat Intelligence</h5>
+          <p>Actionable insights to anticipate, identify, and neutralize emerging cyber threats.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/services" fragment="incident-response">
+          <span class="material-symbols-outlined mega-menu__icon">emergency</span>
+          <h5>Incident Response</h5>
+          <p>Expert-led containment, investigation, and recovery to minimize business impact.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/services" fragment="risk-assessment">
+          <span class="material-symbols-outlined mega-menu__icon">assessment</span>
+          <h5>Risk Assessment</h5>
+          <p>Holistic risk analysis, compliance gap identification, and mitigation strategies.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/services" fragment="cloud-security">
+          <span class="material-symbols-outlined mega-menu__icon">cloud_done</span>
+          <h5>Cloud Security</h5>
+          <p>End-to-end protection for cloud workloads, data, and access across environments.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/services" fragment="compliance">
+          <span class="material-symbols-outlined mega-menu__icon">verified_user</span>
+          <h5>Compliance Consulting</h5>
+          <p>Guidance for ISO, SOC2, GDPR, and industry-specific regulatory frameworks.</p>
+        </a>
+      </div>
+    </li>
+
+    <!-- Solutions -->
+    <li class="mega-menu__item" (mouseenter)="openDropdown('solutions')" (mouseleave)="closeDropdown()">
+      <a routerLink="/solutions"><span class="material-symbols-outlined">hub</span> Solutions</a>
+      <div class="mega-menu__dropdown" [class.show]="activeDropdown === 'solutions'">
+        <a class="mega-menu__col" routerLink="/solutions" fragment="zero-trust">
+          <span class="material-symbols-outlined mega-menu__icon">lock</span>
+          <h5>Zero Trust Architecture</h5>
+          <p>Least-privilege access and continuous verification security model.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="network-segmentation">
+          <span class="material-symbols-outlined mega-menu__icon">lan</span>
+          <h5>Network Segmentation</h5>
+          <p>Granular network controls to contain threats and protect critical assets.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="iam">
+          <span class="material-symbols-outlined mega-menu__icon">fingerprint</span>
+          <h5>Identity &amp; Access Management</h5>
+          <p>Authentication, authorization, and lifecycle management for users and devices.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="data-protection">
+          <span class="material-symbols-outlined mega-menu__icon">encrypted</span>
+          <h5>Data Protection</h5>
+          <p>Encryption, DLP, and secure data lifecycle management for compliance.</p>
+        </a>
+      </div>
+    </li>
+
+    <!-- Industries -->
+    <li class="mega-menu__item" (mouseenter)="openDropdown('industries')" (mouseleave)="closeDropdown()">
+      <a href="javascript:void(0)"><span class="material-symbols-outlined">domain</span> Industries</a>
+      <div class="mega-menu__dropdown" [class.show]="activeDropdown === 'industries'">
+        <a class="mega-menu__col" routerLink="/solutions" fragment="financial-services">
+          <span class="material-symbols-outlined mega-menu__icon">account_balance</span>
+          <h5>Financial Services</h5>
+          <p>Securing banking, insurance, and fintech with advanced controls.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="healthcare">
+          <span class="material-symbols-outlined mega-menu__icon">local_hospital</span>
+          <h5>Healthcare</h5>
+          <p>Protecting patient data and critical systems for hospitals and providers.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="retail">
+          <span class="material-symbols-outlined mega-menu__icon">storefront</span>
+          <h5>Retail &amp; eCommerce</h5>
+          <p>Safeguarding transactions, customer data, and supply chains at scale.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="government">
+          <span class="material-symbols-outlined mega-menu__icon">gavel</span>
+          <h5>Government</h5>
+          <p>Defending public sector infrastructure and sensitive information.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/solutions" fragment="manufacturing">
+          <span class="material-symbols-outlined mega-menu__icon">precision_manufacturing</span>
+          <h5>Manufacturing</h5>
+          <p>Securing OT, IoT, and production environments against cyber threats.</p>
+        </a>
+      </div>
+    </li>
+
+    <!-- Company -->
+    <li class="mega-menu__item" (mouseenter)="openDropdown('company')" (mouseleave)="closeDropdown()">
+      <a routerLink="/about"><span class="material-symbols-outlined">groups</span> Company</a>
+      <div class="mega-menu__dropdown" [class.show]="activeDropdown === 'company'">
+        <a class="mega-menu__col" routerLink="/about">
+          <span class="material-symbols-outlined mega-menu__icon">info</span>
+          <h5>About Us</h5>
+          <p>Our mission, vision, and leadership team.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/about" fragment="careers">
+          <span class="material-symbols-outlined mega-menu__icon">work</span>
+          <h5>Careers</h5>
+          <p>Join a world-class team of security and technology professionals.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/about" fragment="insights">
+          <span class="material-symbols-outlined mega-menu__icon">insights</span>
+          <h5>Insights</h5>
+          <p>Thought leadership, research, and industry trends.</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/about" fragment="global-presence">
+          <span class="material-symbols-outlined mega-menu__icon">public</span>
+          <h5>Global Presence</h5>
+          <p>Serving clients in 30+ countries worldwide.</p>
+        </a>
+      </div>
+    </li>
+
+    <!-- Contact -->
+    <li class="mega-menu__item" (mouseenter)="openDropdown('contact')" (mouseleave)="closeDropdown()">
+      <a routerLink="/contact"><span class="material-symbols-outlined">contact_support</span> Contact</a>
+      <div class="mega-menu__dropdown" [class.show]="activeDropdown === 'contact'">
+        <a class="mega-menu__col" routerLink="/contact">
+          <span class="material-symbols-outlined mega-menu__icon">email</span>
+          <h5>Email</h5>
+          <p>servicegozobee&#64;gmail.com</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/contact">
+          <span class="material-symbols-outlined mega-menu__icon">phone</span>
+          <h5>Phone</h5>
+          <p>+91 985 736 3287</p>
+        </a>
+        <a class="mega-menu__col" routerLink="/contact">
+          <span class="material-symbols-outlined mega-menu__icon">location_on</span>
+          <h5>Locations</h5>
+          <p>Global offices and support centers.</p>
+        </a>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Mobile Accordion -->
+  <div class="mega-menu__mobile" *ngIf="isMobileMenuOpen">
+    <div class="mega-menu__mobile-section" *ngFor="let item of [
+      {name: 'Services', key: 'services', icon: 'security'},
+      {name: 'Solutions', key: 'solutions', icon: 'hub'},
+      {name: 'Industries', key: 'industries', icon: 'domain'},
+      {name: 'Company', key: 'company', icon: 'groups'},
+      {name: 'Contact', key: 'contact', icon: 'contact_support'}
+    ]">
+      <button class="mega-menu__mobile-title" (click)="activeDropdown === item.key ? closeDropdown() : openDropdown(item.key)">
+        <span class="material-symbols-outlined">{{item.icon}}</span> {{item.name}}
+      </button>
+      <div class="mega-menu__mobile-content" *ngIf="activeDropdown === item.key">
+        <ng-container [ngSwitch]="item.key">
+          <ng-container *ngSwitchCase="'services'">
+            <a class="mega-menu__col" routerLink="/services" fragment="managed-security"><span class="material-symbols-outlined mega-menu__icon">shield</span><h5>Managed Security</h5><p>Comprehensive 24/7 monitoring, proactive threat detection, and rapid incident response.</p></a>
+            <a class="mega-menu__col" routerLink="/services" fragment="threat-intelligence"><span class="material-symbols-outlined mega-menu__icon">psychology</span><h5>Threat Intelligence</h5><p>Actionable insights to anticipate, identify, and neutralize emerging cyber threats.</p></a>
+            <a class="mega-menu__col" routerLink="/services" fragment="incident-response"><span class="material-symbols-outlined mega-menu__icon">emergency</span><h5>Incident Response</h5><p>Expert-led containment, investigation, and recovery to minimize business impact.</p></a>
+            <a class="mega-menu__col" routerLink="/services" fragment="risk-assessment"><span class="material-symbols-outlined mega-menu__icon">assessment</span><h5>Risk Assessment</h5><p>Holistic risk analysis, compliance gap identification, and mitigation strategies.</p></a>
+            <a class="mega-menu__col" routerLink="/services" fragment="cloud-security"><span class="material-symbols-outlined mega-menu__icon">cloud_done</span><h5>Cloud Security</h5><p>End-to-end protection for cloud workloads, data, and access across environments.</p></a>
+            <a class="mega-menu__col" routerLink="/services" fragment="compliance"><span class="material-symbols-outlined mega-menu__icon">verified_user</span><h5>Compliance Consulting</h5><p>Guidance for ISO, SOC2, GDPR, and industry-specific regulatory frameworks.</p></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'solutions'">
+            <a class="mega-menu__col" routerLink="/solutions" fragment="zero-trust"><span class="material-symbols-outlined mega-menu__icon">lock</span><h5>Zero Trust Architecture</h5><p>Least-privilege access and continuous verification security model.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="network-segmentation"><span class="material-symbols-outlined mega-menu__icon">lan</span><h5>Network Segmentation</h5><p>Granular network controls to contain threats and protect critical assets.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="iam"><span class="material-symbols-outlined mega-menu__icon">fingerprint</span><h5>Identity &amp; Access Management</h5><p>Authentication, authorization, and lifecycle management for users and devices.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="data-protection"><span class="material-symbols-outlined mega-menu__icon">encrypted</span><h5>Data Protection</h5><p>Encryption, DLP, and secure data lifecycle management for compliance.</p></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'industries'">
+            <a class="mega-menu__col" routerLink="/solutions" fragment="financial-services"><span class="material-symbols-outlined mega-menu__icon">account_balance</span><h5>Financial Services</h5><p>Securing banking, insurance, and fintech with advanced controls.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="healthcare"><span class="material-symbols-outlined mega-menu__icon">local_hospital</span><h5>Healthcare</h5><p>Protecting patient data and critical systems for hospitals and providers.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="retail"><span class="material-symbols-outlined mega-menu__icon">storefront</span><h5>Retail &amp; eCommerce</h5><p>Safeguarding transactions, customer data, and supply chains at scale.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="government"><span class="material-symbols-outlined mega-menu__icon">gavel</span><h5>Government</h5><p>Defending public sector infrastructure and sensitive information.</p></a>
+            <a class="mega-menu__col" routerLink="/solutions" fragment="manufacturing"><span class="material-symbols-outlined mega-menu__icon">precision_manufacturing</span><h5>Manufacturing</h5><p>Securing OT, IoT, and production environments against cyber threats.</p></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'company'">
+            <a class="mega-menu__col" routerLink="/about"><span class="material-symbols-outlined mega-menu__icon">info</span><h5>About Us</h5><p>Our mission, vision, and leadership team.</p></a>
+            <a class="mega-menu__col" routerLink="/about" fragment="careers"><span class="material-symbols-outlined mega-menu__icon">work</span><h5>Careers</h5><p>Join a world-class team of security and technology professionals.</p></a>
+            <a class="mega-menu__col" routerLink="/about" fragment="insights"><span class="material-symbols-outlined mega-menu__icon">insights</span><h5>Insights</h5><p>Thought leadership, research, and industry trends.</p></a>
+            <a class="mega-menu__col" routerLink="/about" fragment="global-presence"><span class="material-symbols-outlined mega-menu__icon">public</span><h5>Global Presence</h5><p>Serving clients in 30+ countries worldwide.</p></a>
+          </ng-container>
+          <ng-container *ngSwitchCase="'contact'">
+            <a class="mega-menu__col" routerLink="/contact"><span class="material-symbols-outlined mega-menu__icon">email</span><h5>Email</h5><p>servicegozobee&#64;gmail.com</p></a>
+            <a class="mega-menu__col" routerLink="/contact"><span class="material-symbols-outlined mega-menu__icon">phone</span><h5>Phone</h5><p>+91 985 736 3287</p></a>
+            <a class="mega-menu__col" routerLink="/contact"><span class="material-symbols-outlined mega-menu__icon">location_on</span><h5>Locations</h5><p>Global offices and support centers.</p></a>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</nav>

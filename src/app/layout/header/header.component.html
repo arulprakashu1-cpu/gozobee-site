@@ -1,0 +1,16 @@
+<header class="header" [class.scrolled]="isScrolled">
+  <div class="header__container">
+    <a class="header__logo" routerLink="/">
+      <img src="assets/logo-white.svg" alt="Gozobee" class="header__logo-img" />
+    </a>
+    <nav class="header__nav">
+      <app-mega-menu #megaMenu></app-mega-menu>
+    </nav>
+    <a routerLink="/contact" class="header__cta">
+      <span class="material-symbols-outlined">shield</span> Get Protected
+    </a>
+    <button class="header__mobile-toggle" (click)="megaMenu.toggleMobileMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

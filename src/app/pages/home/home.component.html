@@ -1,0 +1,501 @@
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero__grid-bg"></div>
+  <div class="hero__orb hero__orb--1"></div>
+  <div class="hero__orb hero__orb--2"></div>
+  <div class="hero__orb hero__orb--3"></div>
+  <div class="hero__inner">
+    <div class="hero__badge reveal-scale">
+      <span class="hero__badge-dot"></span>
+      Live Threat Protection Active
+    </div>
+    <h1 class="hero__title reveal">
+      Defend Your Digital Empire<br>
+      <span class="hero__gradient-text">With Unbreakable Security</span>
+    </h1>
+    <p class="hero__subtitle reveal">
+      GOZOBEE delivers AI-powered cybersecurity, 24/7 threat intelligence, and enterprise-grade protection trusted by Fortune 500 companies across 30+ countries.
+    </p>
+    <div class="hero__actions reveal">
+      <a routerLink="/contact" class="btn btn--primary btn--glow">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        Start Free Assessment
+      </a>
+      <a routerLink="/solutions" class="btn btn--glass">
+        <span class="material-symbols-outlined">play_circle</span>
+        See How It Works
+      </a>
+    </div>
+
+    <!-- Live Threat Counter -->
+    <div class="hero__threat-bar reveal">
+      <div class="hero__threat-item">
+        <span class="hero__threat-pulse"></span>
+        <span class="hero__threat-label">Threats Blocked Today</span>
+        <strong class="hero__threat-count">{{ threatsBlocked | number }}</strong>
+      </div>
+      <div class="hero__threat-divider"></div>
+      <div class="hero__threat-item">
+        <span class="material-symbols-outlined hero__threat-icon">shield</span>
+        <span class="hero__threat-label">Active Shields</span>
+        <strong>12,847</strong>
+      </div>
+      <div class="hero__threat-divider"></div>
+      <div class="hero__threat-item">
+        <span class="material-symbols-outlined hero__threat-icon">speed</span>
+        <span class="hero__threat-label">Avg Response</span>
+        <strong>&lt; 8ms</strong>
+      </div>
+      <div class="hero__threat-divider"></div>
+      <div class="hero__threat-item">
+        <span class="material-symbols-outlined hero__threat-icon">verified</span>
+        <span class="hero__threat-label">Uptime</span>
+        <strong>99.99%</strong>
+      </div>
+    </div>
+
+    <div class="hero__stats stagger-children">
+      <div class="hero__stat">
+        <strong>500+</strong>
+        <span>Enterprise Clients</span>
+      </div>
+      <div class="hero__stat">
+        <strong>$4.2B</strong>
+        <span>Assets Protected</span>
+      </div>
+      <div class="hero__stat">
+        <strong>30+</strong>
+        <span>Countries Served</span>
+      </div>
+      <div class="hero__stat">
+        <strong>24/7/365</strong>
+        <span>SOC Monitoring</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUSTED BY ===== -->
+<section class="trusted">
+  <div class="trusted__inner">
+    <p class="trusted__label">Trusted by industry leaders worldwide</p>
+    <div class="trusted__track">
+      <div class="trusted__scroll">
+        <span>Microsoft</span>
+        <span>Google Cloud</span>
+        <span>Amazon AWS</span>
+        <span>IBM Security</span>
+        <span>Cisco</span>
+        <span>Deloitte</span>
+        <span>Accenture</span>
+        <span>PwC</span>
+        <span>Oracle</span>
+        <span>SAP</span>
+        <span>Salesforce</span>
+        <span>Intel</span>
+        <span>NVIDIA</span>
+        <span>Meta</span>
+        <!-- duplicate for seamless loop -->
+        <span>Microsoft</span>
+        <span>Google Cloud</span>
+        <span>Amazon AWS</span>
+        <span>IBM Security</span>
+        <span>Cisco</span>
+        <span>Deloitte</span>
+        <span>Accenture</span>
+        <span>PwC</span>
+        <span>Oracle</span>
+        <span>SAP</span>
+        <span>Salesforce</span>
+        <span>Intel</span>
+        <span>NVIDIA</span>
+        <span>Meta</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLATFORM FEATURES ===== -->
+<section class="platform">
+  <div class="platform__inner">
+    <div class="platform__header reveal">
+      <span class="section-tag">The Platform</span>
+      <h2 class="section-title">One Unified Security Platform.<br>Complete Visibility.</h2>
+      <p class="section-subtitle">Replace fragmented tools with a single pane of glass that monitors, detects, and responds across your entire attack surface.</p>
+    </div>
+    <div class="platform__grid stagger-children">
+      <div class="platform__card platform__card--featured">
+        <div class="platform__card-glow"></div>
+        <span class="material-symbols-outlined platform__card-icon">neurology</span>
+        <h3>AI Threat Engine</h3>
+        <p>Deep learning models trained on 50B+ events analyze threats in real-time, reducing false positives by 96%.</p>
+        <div class="platform__card-stat">
+          <strong>50B+</strong>
+          <span>events analyzed daily</span>
+        </div>
+      </div>
+      <div class="platform__card">
+        <span class="material-symbols-outlined platform__card-icon">shield</span>
+        <h3>Managed Detection & Response</h3>
+        <p>24/7 expert monitoring with automated containment and human-led investigation for critical incidents.</p>
+        <div class="platform__card-stat">
+          <strong>&lt; 15min</strong>
+          <span>mean response time</span>
+        </div>
+      </div>
+      <div class="platform__card">
+        <span class="material-symbols-outlined platform__card-icon">cloud_done</span>
+        <h3>Cloud-Native SIEM</h3>
+        <p>Ingest, correlate, and analyze security data from any source at petabyte scale with zero infrastructure overhead.</p>
+        <div class="platform__card-stat">
+          <strong>100%</strong>
+          <span>cloud coverage</span>
+        </div>
+      </div>
+      <div class="platform__card">
+        <span class="material-symbols-outlined platform__card-icon">lock</span>
+        <h3>Zero Trust Access</h3>
+        <p>Continuous identity verification and micro-segmentation that eliminates implicit trust across your network.</p>
+        <div class="platform__card-stat">
+          <strong>74%</strong>
+          <span>attack surface reduction</span>
+        </div>
+      </div>
+      <div class="platform__card">
+        <span class="material-symbols-outlined platform__card-icon">radar</span>
+        <h3>Attack Surface Management</h3>
+        <p>Continuously discover, classify, and prioritize external-facing assets before adversaries find them.</p>
+        <div class="platform__card-stat">
+          <strong>Real-time</strong>
+          <span>asset discovery</span>
+        </div>
+      </div>
+      <div class="platform__card">
+        <span class="material-symbols-outlined platform__card-icon">verified_user</span>
+        <h3>Compliance Automation</h3>
+        <p>Automated evidence collection, gap analysis, and continuous monitoring for SOC 2, ISO 27001, HIPAA, PCI-DSS.</p>
+        <div class="platform__card-stat">
+          <strong>60%</strong>
+          <span>faster compliance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY GOZOBEE ===== -->
+<section class="why-us">
+  <div class="why-us__inner">
+    <div class="why-us__content reveal-left">
+      <span class="section-tag">Why GOZOBEE</span>
+      <h2 class="section-title">The Security Partner<br>Global Leaders Trust</h2>
+      <p>We combine deep industry expertise with cutting-edge technology to deliver security outcomes — not just tools. Our approach is proactive, intelligence-driven, and built for the complexity of modern enterprise environments.</p>
+      <ul class="why-us__list">
+        <li><span class="material-symbols-outlined">check_circle</span> ISO 27001, SOC 2 Type II & GDPR Certified</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Dedicated Security Operations Center (SOC)</li>
+        <li><span class="material-symbols-outlined">check_circle</span> AI-Powered Threat Detection & Response</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Zero Trust Architecture Specialists</li>
+        <li><span class="material-symbols-outlined">check_circle</span> Industry-Specific Compliance Frameworks</li>
+      </ul>
+      <a routerLink="/about" class="btn btn--primary" style="margin-top: 1.5rem;">
+        <span class="material-symbols-outlined">arrow_forward</span>
+        Learn More About Us
+      </a>
+    </div>
+    <div class="why-us__visual reveal-right">
+      <div class="why-us__metric-grid">
+        <div class="metric-card">
+          <span class="material-symbols-outlined">speed</span>
+          <strong>&lt; 15 min</strong>
+          <span>Avg. Response Time</span>
+        </div>
+        <div class="metric-card metric-card--highlight">
+          <span class="material-symbols-outlined">bug_report</span>
+          <strong>2M+</strong>
+          <span>Threats Blocked/Day</span>
+        </div>
+        <div class="metric-card metric-card--highlight">
+          <span class="material-symbols-outlined">workspace_premium</span>
+          <strong>98%</strong>
+          <span>Client Retention</span>
+        </div>
+        <div class="metric-card">
+          <span class="material-symbols-outlined">groups</span>
+          <strong>350+</strong>
+          <span>Security Experts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="process">
+  <div class="process__inner">
+    <div class="process__header reveal">
+      <span class="section-tag">How It Works</span>
+      <h2 class="section-title">From Vulnerability to Fortress<br>in 4 Steps</h2>
+    </div>
+    <div class="process__timeline stagger-children">
+      <div class="process__step">
+        <div class="process__step-number">01</div>
+        <div class="process__step-content">
+          <h3>Discovery & Assessment</h3>
+          <p>We map your entire digital footprint — endpoints, cloud infrastructure, applications, and data flows — to identify every vulnerability.</p>
+        </div>
+        <div class="process__step-icon">
+          <span class="material-symbols-outlined">search</span>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="process__step-number">02</div>
+        <div class="process__step-content">
+          <h3>Strategy & Architecture</h3>
+          <p>Our architects design a defense-in-depth strategy tailored to your risk profile, industry regulations, and business objectives.</p>
+        </div>
+        <div class="process__step-icon">
+          <span class="material-symbols-outlined">architecture</span>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="process__step-number">03</div>
+        <div class="process__step-content">
+          <h3>Deploy & Integrate</h3>
+          <p>Seamless deployment across your infrastructure with zero downtime. Full integration with existing tools in under 48 hours.</p>
+        </div>
+        <div class="process__step-icon">
+          <span class="material-symbols-outlined">integration_instructions</span>
+        </div>
+      </div>
+      <div class="process__step">
+        <div class="process__step-number">04</div>
+        <div class="process__step-content">
+          <h3>Monitor & Evolve</h3>
+          <p>Continuous 24/7 monitoring with adaptive threat models that evolve as your business and the threat landscape change.</p>
+        </div>
+        <div class="process__step-icon">
+          <span class="material-symbols-outlined">monitoring</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES  ===== -->
+<section class="industries">
+  <div class="industries__inner">
+    <div class="reveal">
+      <span class="section-tag">Industries</span>
+      <h2 class="section-title">Purpose-Built for Your Industry</h2>
+      <p class="section-subtitle">We understand the unique threats, regulations, and security requirements of every sector we serve.</p>
+    </div>
+    <div class="industries__grid stagger-children">
+      <div class="industry-card">
+        <span class="material-symbols-outlined">account_balance</span>
+        <h4>Financial Services</h4>
+        <p>Securing banking, insurance, and fintech infrastructure against sophisticated financial threats.</p>
+      </div>
+      <div class="industry-card">
+        <span class="material-symbols-outlined">local_hospital</span>
+        <h4>Healthcare</h4>
+        <p>Protecting patient data, medical devices, and hospital systems with HIPAA-compliant security.</p>
+      </div>
+      <div class="industry-card">
+        <span class="material-symbols-outlined">gavel</span>
+        <h4>Government</h4>
+        <p>Defending critical public sector infrastructure and classified information with zero-trust controls.</p>
+      </div>
+      <div class="industry-card">
+        <span class="material-symbols-outlined">storefront</span>
+        <h4>Retail & eCommerce</h4>
+        <p>Safeguarding customer transactions, PCI-DSS compliance, and supply chain integrity at scale.</p>
+      </div>
+      <div class="industry-card">
+        <span class="material-symbols-outlined">precision_manufacturing</span>
+        <h4>Manufacturing</h4>
+        <p>Securing OT/IoT environments, SCADA systems, and production lines against cyber-physical threats.</p>
+      </div>
+      <div class="industry-card">
+        <span class="material-symbols-outlined">school</span>
+        <h4>Education</h4>
+        <p>Protecting student data, research IP, and campus networks with comprehensive security controls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASE STUDIES ===== -->
+<section class="case-studies">
+  <div class="case-studies__inner">
+    <div class="reveal">
+      <span class="section-tag">Case Studies</span>
+      <h2 class="section-title">Real Results. Proven Impact.</h2>
+      <p class="section-subtitle">See how we protect the world's most demanding organizations.</p>
+    </div>
+    <div class="case-studies__grid stagger-children">
+      <div class="case-card">
+        <div class="case-card__tag">Financial Services</div>
+        <h3>Global Bank Reduces Breach Risk by 89%</h3>
+        <p>Deployed Zero Trust architecture and AI-driven monitoring for a Fortune 100 bank with 50,000+ endpoints across 18 countries.</p>
+        <div class="case-card__results">
+          <div class="case-card__result">
+            <strong>89%</strong>
+            <span>Risk Reduction</span>
+          </div>
+          <div class="case-card__result">
+            <strong>$12M</strong>
+            <span>Cost Savings</span>
+          </div>
+          <div class="case-card__result">
+            <strong>99.99%</strong>
+            <span>Uptime</span>
+          </div>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-card__tag">Healthcare</div>
+        <h3>Hospital Chain Achieves HIPAA in 90 Days</h3>
+        <p>Full compliance transformation for a 12-facility hospital network handling 2M+ patient records annually.</p>
+        <div class="case-card__results">
+          <div class="case-card__result">
+            <strong>90 Days</strong>
+            <span>To Compliance</span>
+          </div>
+          <div class="case-card__result">
+            <strong>0</strong>
+            <span>Breaches Since</span>
+          </div>
+          <div class="case-card__result">
+            <strong>100%</strong>
+            <span>HIPAA Score</span>
+          </div>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-card__tag">Government</div>
+        <h3>Federal Agency Repels Nation-State Attack</h3>
+        <p>Our SOC team detected and neutralized an advanced persistent threat (APT) targeting classified defense infrastructure.</p>
+        <div class="case-card__results">
+          <div class="case-card__result">
+            <strong>12 min</strong>
+            <span>Detection Time</span>
+          </div>
+          <div class="case-card__result">
+            <strong>0 Data</strong>
+            <span>Exfiltrated</span>
+          </div>
+          <div class="case-card__result">
+            <strong>APT-28</strong>
+            <span>Threat Actor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="testimonials__inner">
+    <div class="reveal">
+      <span class="section-tag">Client Testimonials</span>
+      <h2 class="section-title">What Our Clients Say</h2>
+    </div>
+    <div class="testimonials__grid stagger-children">
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"GOZOBEE transformed our security posture. Their SOC team identified and contained a critical breach within 12 minutes. That kind of response time is unmatched."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">RS</div>
+          <div>
+            <strong>Rajesh Sharma</strong>
+            <span>CISO, Atlas Financial Group</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"Their compliance consulting helped us achieve SOC 2 Type II certification 3 months ahead of schedule. Professional, thorough, and deeply knowledgeable."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">SM</div>
+          <div>
+            <strong>Sarah Mitchell</strong>
+            <span>VP Engineering, CloudNova Inc.</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-card__stars">★★★★★</div>
+        <p>"We evaluated 8 vendors before choosing GOZOBEE. Their Zero Trust implementation reduced our attack surface by 74% in the first quarter."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">AP</div>
+          <div>
+            <strong>Dr. Anand Patel</strong>
+            <span>CTO, MedSecure Health Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="certifications">
+  <div class="certifications__inner reveal">
+    <span class="section-tag">Certifications & Awards</span>
+    <h2 class="section-title">Globally Recognized. Industry Certified.</h2>
+    <div class="certifications__grid">
+      <div class="cert-badge">
+        <span class="material-symbols-outlined">verified</span>
+        <strong>ISO 27001</strong>
+        <span>Certified</span>
+      </div>
+      <div class="cert-badge">
+        <span class="material-symbols-outlined">security</span>
+        <strong>SOC 2 Type II</strong>
+        <span>Compliant</span>
+      </div>
+      <div class="cert-badge">
+        <span class="material-symbols-outlined">shield</span>
+        <strong>GDPR</strong>
+        <span>Compliant</span>
+      </div>
+      <div class="cert-badge">
+        <span class="material-symbols-outlined">local_hospital</span>
+        <strong>HIPAA</strong>
+        <span>Certified</span>
+      </div>
+      <div class="cert-badge">
+        <span class="material-symbols-outlined">credit_card</span>
+        <strong>PCI-DSS</strong>
+        <span>Level 1</span>
+      </div>
+      <div class="cert-badge">
+        <span class="material-symbols-outlined">military_tech</span>
+        <strong>FedRAMP</strong>
+        <span>Authorized</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA  ===== -->
+<section class="cta">
+  <div class="cta__orb cta__orb--1"></div>
+  <div class="cta__orb cta__orb--2"></div>
+  <div class="cta__inner reveal-scale">
+    <span class="material-symbols-outlined cta__icon">security</span>
+    <h2>Ready to Secure Your Enterprise?</h2>
+    <p>Get a complimentary security assessment and discover how GOZOBEE can protect your most critical assets. No obligations. No sales pressure. Just results.</p>
+    <div class="cta__actions">
+      <a routerLink="/contact" class="btn btn--primary btn--glow btn--lg">
+        <span class="material-symbols-outlined">rocket_launch</span>
+        Start Free Assessment
+      </a>
+      <a href="tel:+919857363287" class="btn btn--glass btn--lg">
+        <span class="material-symbols-outlined">phone</span> +91 985 736 3287
+      </a>
+    </div>
+    <p class="cta__disclaimer">Free for enterprises with 100+ employees. Setup in under 48 hours.</p>
+  </div>
+</section>

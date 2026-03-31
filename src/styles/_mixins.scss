@@ -1,0 +1,17 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card {
+  background: $color-background;
+  border-radius: $border-radius;
+  box-shadow: $shadow-card;
+  padding: $spacing-3 $spacing-4;
+  border: 1px solid $color-border;
+}
+
+@mixin transition($props...) {
+  transition: $props 0.2s cubic-bezier(0.4,0,0.2,1);
+}

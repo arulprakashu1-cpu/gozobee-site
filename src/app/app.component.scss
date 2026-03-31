@@ -1,0 +1,11 @@
+@import '../styles/_variables.scss';
+@import '../styles/_mixins.scss';
+
+.main-content {
+  min-height: 70vh;
+  background: $color-dark;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: #fff;
+  background: $color-dark;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
+  color: #fff;
+}
+h2, .h2 {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-semibold;
+  color: #fff;
+}
+h3, .h3 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-medium;
+  color: #fff;
+}
+h4, .h4 {
+  font-size: $font-size-h4;
+  font-weight: $font-weight-medium;
+  color: #fff;
+}
+h5, .h5 {
+  font-size: $font-size-h5;
+  font-weight: $font-weight-medium;
+}
+h6, .h6 {
+  font-size: $font-size-h6;
+  font-weight: $font-weight-regular;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
